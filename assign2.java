@@ -11,17 +11,17 @@ class Student
     }
 
     // Parameterized Constructor
-    Student(String n, int a)
+    Student(String name, int age)
     {
-        name = n;
-        age = a;
+        this.name = name;
+        this.age = age;
     }
 
     // Copy Constructor
     Student(Student s)
     {
-        name = s.name;
-        age = s.age;
+        this.name = s.name;
+        this.age = s.age;
     }
 
     // Method to display details
@@ -34,13 +34,8 @@ class Student
 
     public static void main(String args[])
     {
-        // Default Constructor
         Student s1 = new Student();
-
-        // Parameterized Constructor
         Student s2 = new Student("Mohammed Tawfik", 20);
-
-        // Copy Constructor
         Student s3 = new Student(s2);
 
         System.out.println("Default Constructor:");
