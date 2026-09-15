@@ -1,42 +1,37 @@
-class Student
-{
+public class assign2 {
     String name;
     int age;
 
     // Default Constructor
-    Student()
-    {
+    assign2() {
         name = "Unknown";
         age = 0;
     }
 
     // Parameterized Constructor
-    Student(String name, int age)
-    {
+    assign2(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
     // Copy Constructor
-    Student(Student s)
-    {
+    assign2(assign2 s) {
         this.name = s.name;
         this.age = s.age;
     }
 
-    // Method to display details
-    void display()
-    {
+    // Display Method
+    void display() {
         System.out.println("Name : " + name);
         System.out.println("Age  : " + age);
         System.out.println();
     }
 
-    public static void main(String args[])
-    {
-        Student s1 = new Student();
-        Student s2 = new Student("Mohammed Tawfik", 20);
-        Student s3 = new Student(s2);
+    // Main Method
+    public static void main(String[] args) {
+        assign2 s1 = new assign2();
+        assign2 s2 = new assign2("Mohammed Tawfik", 20);
+        assign2 s3 = new assign2(s2);
 
         System.out.println("Default Constructor:");
         s1.display();
