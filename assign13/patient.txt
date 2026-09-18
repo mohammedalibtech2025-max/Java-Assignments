@@ -1,0 +1,4 @@
+Patient ID: 101
+Name: Amit
+Age: 25
+Diagnosis: Fever
